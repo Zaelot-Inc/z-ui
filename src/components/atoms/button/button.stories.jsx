@@ -11,6 +11,6 @@ export default {
   }
 }
 
-const Template = args => <Button {...args} />
+const Template = args => <Button {...args} onClick={() => console.log('clicked')} />
 
 export const Default = Template.bind({})

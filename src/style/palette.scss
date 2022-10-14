@@ -1,0 +1,17 @@
+$red: red !default;
+$tomato: tomato !default;
+$orange: orange !default;
+$green: green !default;
+$blue: blue !default;
+$yellow: yellow !default;
+
+// :root{
+//   @each $key, $value in $colors {
+//       --#{$key} : #{$value};
+//   }
+// }
+
+// primary
+$primary: $red;
+$primary-hover: $tomato;
+$primary-active: $orange;
