@@ -1,4 +1,5 @@
-import React from 'react'
+import PropTypes from 'prop-types'
+
 import './button.css'
 
 const Button = ({ label, ...props }) => {
@@ -13,6 +14,12 @@ const Button = ({ label, ...props }) => {
       {label}
     </Tag>
   )
+}
+
+Button.propTypes = {
+  label: PropTypes.string.isRequired,
+  onClick: PropTypes.func,
+  href: PropTypes.string
 }
 
 export default Button
