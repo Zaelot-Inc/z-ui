@@ -1,0 +1,28 @@
+@use '../../../style/palette.scss';
+@use '../../../style/spacing.scss';
+
+.button {
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 3em;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  color: white;
+  background-color: palette.$primary;
+  font-size: 14px;
+  padding: spacing.$onaHalf spacing.$twoHalf;
+
+  &:hover {
+    background-color: palette.$primary-hover;
+  }
+
+  &:active {
+    background-color: palette.$primary-active;
+  }
+}
+
+.another {
+  border-bottom-left-radius: 0;
+}

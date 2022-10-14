@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-import './button.css'
+import styles from './button.module.scss'
 
 const Button = ({ label, ...props }) => {
   const Tag = props.href ? 'a' : 'button'
@@ -8,7 +8,7 @@ const Button = ({ label, ...props }) => {
   return (
     <Tag
       type='button'
-      className='storybook-button'
+      className={`${styles.button} ${styles.another}`}
       {...props}
     >
       {label}
