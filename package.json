@@ -10,7 +10,9 @@
     "lint": "eslint ./src/**/*.js ./src/**/*.jsx --fix",
     "stylelint": "stylelint ./src/**/*.scss ./src/**/*.css",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "prop-types": "^15.8.1",
