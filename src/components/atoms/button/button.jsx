@@ -6,11 +6,7 @@ const Button = ({ label, ...props }) => {
   const Tag = props.href ? 'a' : 'button'
 
   return (
-    <Tag
-      type='button'
-      className={`${styles.button} ${styles.another}`}
-      {...props}
-    >
+    <Tag type='button' className={`${styles.button} ${styles.another}`} {...props}>
       {label}
     </Tag>
   )
