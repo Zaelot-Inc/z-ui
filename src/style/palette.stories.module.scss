@@ -1,0 +1,238 @@
+@use './spacing.scss';
+@use './palette.scss';
+@use './font.scss';
+
+// Palette Story
+
+.colorContainer {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  width: 350px;
+}
+
+.divider {
+  height: 20px;
+}
+
+.colorName {
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: capitalize;
+  flex: 1;
+  text-align: center;
+  font-weight: font.$semibold;
+}
+
+.contrastText {
+  color: white;
+}
+
+.colorCode {
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  flex: 1;
+  text-align: center;
+  font-size: font.$sm;
+}
+
+.paletteTitle {
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: font.$semibold;
+  font-size: font.$xlg;
+}
+
+.rootContainer {
+  display: flex;
+  flex-direction: column;
+}
+.colorPaletteContainer {
+  display: flex;
+  gap: spacing.$x3lg;
+}
+.mainPaletteContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: spacing.$xlg;
+}
+
+// Color Swatch Positions
+
+.first {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.main {
+  border-radius: 4px;
+  margin-top: spacing.$xsm;
+}
+
+.last {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+// Palette Color Classes
+
+.darkindigo {
+  background-color: palette.$darkindigo;
+}
+.blackish {
+  background-color: palette.$blackish;
+}
+.navy {
+  background-color: palette.$navy;
+}
+.american-gray {
+  background-color: palette.$american-gray;
+}
+.aquamarine {
+  background-color: palette.$aquamarine;
+}
+.explosive {
+  background-color: palette.$explosive;
+}
+.green {
+  background-color: palette.$green;
+}
+.winter {
+  background-color: palette.$winter;
+}
+.grass-green {
+  background-color: palette.$grass-green;
+}
+.river {
+  background-color: palette.$river;
+}
+.bright-green {
+  background-color: palette.$bright-green;
+}
+.darkblue {
+  background-color: palette.$darkblue;
+}
+.saladish {
+  background-color: palette.$saladish;
+}
+.lightblue {
+  background-color: palette.$lightblue;
+}
+.egg-yolk {
+  background-color: palette.$egg-yolk;
+}
+.chillblue {
+  background-color: palette.$chillblue;
+}
+.orange {
+  background-color: palette.$orange;
+}
+.indigo {
+  background-color: palette.$indigo;
+}
+.peach {
+  background-color: palette.$peach;
+}
+.darkpurple {
+  background-color: palette.$darkpurple;
+}
+.sunset {
+  background-color: palette.$sunset;
+}
+.berry {
+  background-color: palette.$berry;
+}
+.dark-orange {
+  background-color: palette.$dark-orange;
+}
+.purple {
+  background-color: palette.$purple;
+}
+.red {
+  background-color: palette.$red;
+}
+.sofia-pink {
+  background-color: palette.$sofia-pink;
+}
+.dark-red {
+  background-color: palette.$dark-red;
+}
+.lipstick {
+  background-color: palette.$lipstick;
+}
+.brown {
+  background-color: palette.$brown;
+}
+.bubble {
+  background-color: palette.$bubble;
+}
+.dark {
+  background-color: palette.$dark;
+}
+.wolf-grey {
+  background-color: palette.$wolf-grey;
+}
+.ui-grey {
+  background-color: palette.$ui-grey;
+}
+.riverstone {
+  background-color: palette.$riverstone;
+}
+.white {
+  background-color: palette.$white;
+}
+.primary {
+  background-color: palette.$primary;
+}
+.secondary {
+  background-color: palette.$secondary;
+}
+.tertiary {
+  background-color: palette.$tertiary;
+}
+.success {
+  background-color: palette.$success;
+}
+.danger {
+  background-color: palette.$danger;
+}
+.warning {
+  background-color: palette.$warning;
+}
+
+.primary-hover {
+  background-color: palette.$primary-hover;
+}
+.secondary-hover {
+  background-color: palette.$secondary-hover;
+}
+.tertiary-hover {
+  background-color: palette.$tertiary-hover;
+}
+.success-hover {
+  background-color: palette.$success-hover;
+}
+.danger-hover {
+  background-color: palette.$danger-hover;
+}
+.warning-hover {
+  background-color: palette.$warning-hover;
+}
+.primary-active {
+  background-color: palette.$primary-active;
+}
+.secondary-active {
+  background-color: palette.$secondary-active;
+}
+.tertiary-active {
+  background-color: palette.$tertiary-active;
+}
+.success-active {
+  background-color: palette.$success-active;
+}
+.danger-active {
+  background-color: palette.$danger-active;
+}
+.warning-active {
+  background-color: palette.$warning-active;
+}

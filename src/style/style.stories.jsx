@@ -1,10 +1,21 @@
-const Foundation = () => <div />
+import { Title, Subtitle, Description, Stories } from '@storybook/addon-docs'
+import spacing from './spacing.stories'
 
 export default {
   title: 'Foundation',
-  component: Foundation
+  component: () => {},
+  parameters: {
+    docs: {
+      page: () => (
+        <>
+          <Title />
+          <Subtitle />
+          <Description />
+          <Stories includePrimary />
+        </>
+      )
+    }
+  }
 }
 
-export const Spacing = () => <div>Spacing component</div>
-
-export const Font = () => <div>Font component</div>
+export const Spacing = spacing

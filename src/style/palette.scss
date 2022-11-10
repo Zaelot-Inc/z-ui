@@ -61,11 +61,59 @@ $success-active: lighten($success, $color-modifier-percentage);
 $danger-active: lighten($danger, $color-modifier-percentage);
 $warning-active: lighten($warning, $color-modifier-percentage);
 
-// TODO: Ask prefered way of handling hover and active
-
-// @function hover($color) {
-//   @return darken($color, $color-modifier-percentage);
-// }
-// @function active($color) {
-//   @return lighten($color, $color-modifier-percentage);
-// }
+// We export the variables to show the color codes in the story
+:export {
+  primary: $primary;
+  primary-hover: $primary-hover;
+  primary-active: $primary-active;
+  secondary: $secondary;
+  secondary-hover: $secondary-hover;
+  secondary-active: $secondary-active;
+  tertiary: $tertiary;
+  tertiary-hover: $tertiary-hover;
+  tertiary-active: $tertiary-active;
+  success: $success;
+  success-hover: $success-hover;
+  success-active: $success-active;
+  danger: $danger;
+  danger-hover: $danger-hover;
+  danger-active: $danger-active;
+  warning: $warning;
+  warning-hover: $warning-hover;
+  warning-active: $warning-active;
+  darkindigo: $darkindigo;
+  blackish: $blackish;
+  navy: $navy;
+  american-gray: $american-gray;
+  aquamarine: $aquamarine;
+  explosive: $explosive;
+  green: $green;
+  winter: $winter;
+  grass-green: $grass-green;
+  river: $river;
+  bright-green: $bright-green;
+  darkblue: $darkblue;
+  saladish: $saladish;
+  lightblue: $lightblue;
+  egg-yolk: $egg-yolk;
+  chillblue: $chillblue;
+  orange: $orange;
+  indigo: $indigo;
+  peach: $peach;
+  darkpurple: $darkpurple;
+  sunset: $sunset;
+  berry: $berry;
+  dark-orange: $dark-orange;
+  purple: $purple;
+  red: $red;
+  sofia-pink: $sofia-pink;
+  dark-red: $dark-red;
+  lipstick: $lipstick;
+  brown: $brown;
+  bubble: $bubble;
+  dark: $dark;
+  wolf-grey: $wolf-grey;
+  ui-grey: $ui-grey;
+  riverstone: $riverstone;
+  white: $white;
+}
