@@ -5,7 +5,7 @@
 // Palette Story
 
 .colorContainer {
-  padding: 10px;
+  padding: spacing.$sm;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,7 +18,7 @@
 }
 
 .colorName {
-  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: capitalize;
   flex: 1;
   text-align: center;
@@ -29,8 +29,8 @@
   color: white;
 }
 
-.colorCode {
-  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@mixin colorCode {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   flex: 1;
   text-align: center;
@@ -38,7 +38,7 @@
 }
 
 .paletteTitle {
-  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: font.$semibold;
   font-size: font.$xlg;
 }
@@ -76,375 +76,426 @@
 
 // Palette Color Classes
 
-
 .darkindigo {
   background-color: palette.$darkindigo;
-}
-.darkindigo-code:after {
-  content: '#{palette.$darkindigo}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$darkindigo}';
+  }
 }
 
 .blackish {
   background-color: palette.$blackish;
-}
-.blackish-code:after {
-  content: '#{palette.$blackish}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$blackish}';
+  }
 }
 
 .navy {
   background-color: palette.$navy;
-}
-.navy-code:after {
-  content: '#{palette.$navy}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$navy}';
+  }
 }
 
 .american-gray {
   background-color: palette.$american-gray;
-}
-.american-gray-code:after {
-  content: '#{palette.$american-gray}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$american-gray}';
+  }
 }
 
 .aquamarine {
   background-color: palette.$aquamarine;
-}
-.aquamarine-code:after {
-  content: '#{palette.$aquamarine}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$aquamarine}';
+  }
 }
 
 .explosive {
   background-color: palette.$explosive;
-}
-.explosive-code:after {
-  content: '#{palette.$explosive}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$explosive}';
+  }
 }
 
 .green {
   background-color: palette.$green;
-}
-.green-code:after {
-  content: '#{palette.$green}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$green}';
+  }
 }
 
 .winter {
   background-color: palette.$winter;
-}
-.winter-code:after {
-  content: '#{palette.$winter}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$winter}';
+  }
 }
 
 .grass-green {
   background-color: palette.$grass-green;
-}
-.grass-green-code:after {
-  content: '#{palette.$grass-green}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$grass-green}';
+  }
 }
 
 .river {
   background-color: palette.$river;
-}
-.river-code:after {
-  content: '#{palette.$river}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$river}';
+  }
 }
 
 .bright-green {
   background-color: palette.$bright-green;
-}
-.bright-green-code:after {
-  content: '#{palette.$bright-green}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$bright-green}';
+  }
 }
 
 .darkblue {
   background-color: palette.$darkblue;
-}
-.darkblue-code:after {
-  content: '#{palette.$darkblue}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$darkblue}';
+  }
 }
 
 .saladish {
   background-color: palette.$saladish;
-}
-.saladish-code:after {
-  content: '#{palette.$saladish}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$saladish}';
+  }
 }
 
 .lightblue {
   background-color: palette.$lightblue;
-}
-.lightblue-code:after {
-  content: '#{palette.$lightblue}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$lightblue}';
+  }
 }
 
 .egg-yolk {
   background-color: palette.$egg-yolk;
-}
-.egg-yolk-code:after {
-  content: '#{palette.$egg-yolk}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$egg-yolk}';
+  }
 }
 
 .chillblue {
   background-color: palette.$chillblue;
-}
-.chillblue-code:after {
-  content: '#{palette.$chillblue}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$chillblue}';
+  }
 }
 
 .orange {
   background-color: palette.$orange;
-}
-.orange-code:after {
-  content: '#{palette.$orange}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$orange}';
+  }
 }
 
 .indigo {
   background-color: palette.$indigo;
-}
-.indigo-code:after {
-  content: '#{palette.$indigo}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$indigo}';
+  }
 }
 
 .peach {
   background-color: palette.$peach;
-}
-.peach-code:after {
-  content: '#{palette.$peach}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$peach}';
+  }
 }
 
 .darkpurple {
   background-color: palette.$darkpurple;
-}
-.darkpurple-code:after {
-  content: '#{palette.$darkpurple}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$darkpurple}';
+  }
 }
 
 .sunset {
   background-color: palette.$sunset;
-}
-.sunset-code:after {
-  content: '#{palette.$sunset}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$sunset}';
+  }
 }
 
 .berry {
   background-color: palette.$berry;
-}
-.berry-code:after {
-  content: '#{palette.$berry}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$berry}';
+  }
 }
 
 .dark-orange {
   background-color: palette.$dark-orange;
-}
-.dark-orange-code:after {
-  content: '#{palette.$dark-orange}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$dark-orange}';
+  }
 }
 
 .purple {
   background-color: palette.$purple;
-}
-.purple-code:after {
-  content: '#{palette.$purple}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$purple}';
+  }
 }
 
 .red {
   background-color: palette.$red;
-}
-.red-code:after {
-  content: '#{palette.$red}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$red}';
+  }
 }
 
 .sofia-pink {
   background-color: palette.$sofia-pink;
-}
-.sofia-pink-code:after {
-  content: '#{palette.$sofia-pink}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$sofia-pink}';
+  }
 }
 
 .dark-red {
   background-color: palette.$dark-red;
-}
-.dark-red-code:after {
-  content: '#{palette.$dark-red}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$dark-red}';
+  }
 }
 
 .lipstick {
   background-color: palette.$lipstick;
-}
-.lipstick-code:after {
-  content: '#{palette.$lipstick}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$lipstick}';
+  }
 }
 
 .brown {
   background-color: palette.$brown;
-}
-.brown-code:after {
-  content: '#{palette.$brown}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$brown}';
+  }
 }
 
 .bubble {
   background-color: palette.$bubble;
-}
-.bubble-code:after {
-  content: '#{palette.$bubble}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$bubble}';
+  }
 }
 
 .dark {
   background-color: palette.$dark;
-}
-.dark-code:after {
-  content: '#{palette.$dark}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$dark}';
+  }
 }
 
 .wolf-grey {
   background-color: palette.$wolf-grey;
-}
-.wolf-grey-code:after {
-  content: '#{palette.$wolf-grey}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$wolf-grey}';
+  }
 }
 
 .ui-grey {
   background-color: palette.$ui-grey;
-}
-.ui-grey-code:after {
-  content: '#{palette.$ui-grey}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$ui-grey}';
+  }
 }
 
 .riverstone {
   background-color: palette.$riverstone;
-}
-.riverstone-code:after {
-  content: '#{palette.$riverstone}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$riverstone}';
+  }
 }
 
 .white {
   background-color: palette.$white;
-}
-.white-code:after {
-  content: '#{palette.$white}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$white}';
+  }
 }
 
 .primary {
   background-color: palette.$primary;
-}
-.primary-code:after {
-  content: '#{palette.$primary}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$primary}';
+  }
 }
 
 .secondary {
   background-color: palette.$secondary;
-}
-.secondary-code:after {
-  content: '#{palette.$secondary}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$secondary}';
+  }
 }
 
 .tertiary {
   background-color: palette.$tertiary;
-}
-.tertiary-code:after {
-  content: '#{palette.$tertiary}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$tertiary}';
+  }
 }
 
 .success {
   background-color: palette.$success;
-}
-.success-code:after {
-  content: '#{palette.$success}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$success}';
+  }
 }
 
 .danger {
   background-color: palette.$danger;
-}
-.danger-code:after {
-  content: '#{palette.$danger}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$danger}';
+  }
 }
 
 .warning {
   background-color: palette.$warning;
+  &:after {
+    @include colorCode;
+    content: '#{palette.$warning}';
+  }
 }
-.warning-code:after {
-  content: '#{palette.$warning}';
-}
-
 
 .primary-hover {
   background-color: palette.$primary-hover;
-}
-.primary-hover-code:after {
-  content: '#{palette.$primary-hover}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$primary-hover}';
+  }
 }
 
 .secondary-hover {
   background-color: palette.$secondary-hover;
-}
-.secondary-hover-code:after {
-  content: '#{palette.$secondary-hover}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$secondary-hover}';
+  }
 }
 
 .tertiary-hover {
   background-color: palette.$tertiary-hover;
-}
-.tertiary-hover-code:after {
-  content: '#{palette.$tertiary-hover}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$tertiary-hover}';
+  }
 }
 
 .success-hover {
   background-color: palette.$success-hover;
-}
-.success-hover-code:after {
-  content: '#{palette.$success-hover}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$success-hover}';
+  }
 }
 
 .danger-hover {
   background-color: palette.$danger-hover;
-}
-.danger-hover-code:after {
-  content: '#{palette.$danger-hover}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$danger-hover}';
+  }
 }
 
 .warning-hover {
   background-color: palette.$warning-hover;
-}
-.warning-hover-code:after {
-  content: '#{palette.$warning-hover}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$warning-hover}';
+  }
 }
 
 .primary-active {
   background-color: palette.$primary-active;
-}
-.primary-active-code:after {
-  content: '#{palette.$primary-active}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$primary-active}';
+  }
 }
 
 .secondary-active {
   background-color: palette.$secondary-active;
-}
-.secondary-active-code:after {
-  content: '#{palette.$secondary-active}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$secondary-active}';
+  }
 }
 
 .tertiary-active {
   background-color: palette.$tertiary-active;
-}
-.tertiary-active-code:after {
-  content: '#{palette.$tertiary-active}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$tertiary-active}';
+  }
 }
 
 .success-active {
   background-color: palette.$success-active;
-}
-.success-active-code:after {
-  content: '#{palette.$success-active}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$success-active}';
+  }
 }
 
 .danger-active {
   background-color: palette.$danger-active;
-}
-.danger-active-code:after {
-  content: '#{palette.$danger-active}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$danger-active}';
+  }
 }
 
 .warning-active {
   background-color: palette.$warning-active;
-}
-.warning-active-code:after {
-  content: '#{palette.$warning-active}';
+  &:after {
+    @include colorCode;
+    content: '#{palette.$warning-active}';
+  }
 }

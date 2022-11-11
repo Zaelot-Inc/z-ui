@@ -60,9 +60,12 @@ const LABELS = {
 
 const Color = ({ name, darkContrast, position }) => {
   return (
-    <div className={`${styles.colorContainer} ${styles[name]} ${position ? styles[position] : ''}`}>
+    <div
+      className={`${styles.colorContainer} ${styles[name]} ${position ? styles[position] : ''} ${
+        darkContrast ? styles.contrastText : ''
+      }`}
+    >
       <p className={`${styles.colorName} ${darkContrast ? styles.contrastText : ''}`}>{LABELS[name]}</p>
-      <span className={`${styles.colorCode}  ${darkContrast ? styles.contrastText : ''} ${styles[`${name}-code`]}`} />
     </div>
   )
 }
