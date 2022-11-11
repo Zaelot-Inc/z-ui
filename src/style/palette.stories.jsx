@@ -1,10 +1,6 @@
 import { Title, Subtitle, Description, Stories } from '@storybook/addon-docs'
 import PropTypes from 'prop-types'
 import styles from './palette.stories.module.scss'
-import paletteScss from './palette.scss'
-import { parseScss } from '../utils/parse'
-
-const paletteVariables = parseScss(paletteScss)
 
 const LABELS = {
   primary: 'Primary',
@@ -66,7 +62,7 @@ const Color = ({ name, darkContrast, position }) => {
   return (
     <div className={`${styles.colorContainer} ${styles[name]} ${position ? styles[position] : ''}`}>
       <p className={`${styles.colorName} ${darkContrast ? styles.contrastText : ''}`}>{LABELS[name]}</p>
-      <p className={`${styles.colorCode} ${darkContrast ? styles.contrastText : ''}`}>{paletteVariables[name]}</p>
+      <span className={`${styles.colorCode}  ${darkContrast ? styles.contrastText : ''} ${styles[`${name}-code`]}`} />
     </div>
   )
 }
