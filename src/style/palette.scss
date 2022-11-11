@@ -37,28 +37,31 @@ $ui-grey: #e5e5e5 !default;
 $riverstone: #f5f5f5 !default;
 $white: #ffffff !default;
 
-// main ui colors
-$primary: #f3e060 !default;
-$secondary: #393c49 !default;
-$tertiary: #eb6165 !default;
-$success: #258750 !default;
-$danger: #d83a52 !default;
-$warning: #d8663a !default;
-
 $color-modifier-percentage: 9% !default;
 
+// main ui colors
+$primary: #f3e060 !default;
 $primary-hover: darken($primary, $color-modifier-percentage);
-$secondary-hover: darken($secondary, $color-modifier-percentage);
-$tertiary-hover: darken($tertiary, $color-modifier-percentage);
-$success-hover: darken($success, $color-modifier-percentage);
-$danger-hover: darken($danger, $color-modifier-percentage);
-$warning-hover: darken($warning, $color-modifier-percentage);
-
 $primary-active: lighten($primary, $color-modifier-percentage);
+
+$secondary: #393c49 !default;
+$secondary-hover: darken($secondary, $color-modifier-percentage);
 $secondary-active: lighten($secondary, $color-modifier-percentage);
+
+$tertiary: #eb6165 !default;
+$tertiary-hover: darken($tertiary, $color-modifier-percentage);
 $tertiary-active: lighten($tertiary, $color-modifier-percentage);
+
+$success: #258750 !default;
+$success-hover: darken($success, $color-modifier-percentage);
 $success-active: lighten($success, $color-modifier-percentage);
+
+$danger: #d83a52 !default;
+$danger-hover: darken($danger, $color-modifier-percentage);
 $danger-active: lighten($danger, $color-modifier-percentage);
+
+$warning: #d8663a !default;
+$warning-hover: darken($warning, $color-modifier-percentage);
 $warning-active: lighten($warning, $color-modifier-percentage);
 
 // We export the variables to show the color codes in the story
