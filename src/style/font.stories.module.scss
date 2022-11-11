@@ -1,0 +1,88 @@
+@use './spacing.scss';
+@use './palette.scss';
+@use './font.scss';
+
+// Font Story
+
+.rootContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.bodyContainer {
+  display: flex;
+  gap: spacing.$x3lg;
+  margin-top: spacing.$sm;
+  align-items: center;
+}
+
+.title {
+  font-weight: font.$semibold;
+  font-size: font.$xlg;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.fontExample {
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: capitalize;
+}
+
+// Font Weight Classes
+
+.thin {
+  font-weight: font.$thin;
+}
+.extralight {
+  font-weight: font.$extralight;
+}
+.light {
+  font-weight: font.$light;
+}
+.normal {
+  font-weight: font.$normal;
+}
+.medium {
+  font-weight: font.$medium;
+}
+.semibold {
+  font-weight: font.$semibold;
+}
+.bold {
+  font-weight: font.$bold;
+}
+.extrabold {
+  font-weight: font.$extrabold;
+}
+.black {
+  font-weight: font.$black;
+}
+
+// Font Size Classes
+
+.x3sm {
+  font-size: font.$x3sm;
+}
+.x2sm {
+  font-size: font.$x2sm;
+}
+.xsm {
+  font-size: font.$xsm;
+}
+.sm {
+  font-size: font.$sm;
+}
+.base {
+  font-size: font.$base;
+}
+.lg {
+  font-size: font.$lg;
+}
+.xlg {
+  font-size: font.$xlg;
+}
+.x2lg {
+  font-size: font.$x2lg;
+}
+.x3lg {
+  font-size: font.$x3lg;
+}

@@ -1,0 +1,53 @@
+@use './spacing.scss';
+@use './palette.scss';
+@use './font.scss';
+
+// Spacing Story
+
+.rootContainer {
+  display: flex;
+  gap: spacing.$x3lg;
+  margin-top: spacing.$sm;
+}
+.spacingBox {
+  height: spacing.$lg;
+  background-color: black;
+}
+
+.spacingText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: spacing.$sm;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+// Spacing Width Classes
+
+.x3sm {
+  width: spacing.$x3sm;
+}
+.x2sm {
+  width: spacing.$x2sm;
+}
+.xsm {
+  width: spacing.$xsm;
+}
+.sm {
+  width: spacing.$sm;
+}
+.base {
+  width: spacing.$base;
+}
+.lg {
+  width: spacing.$lg;
+}
+.xlg {
+  width: spacing.$xlg;
+}
+.x2lg {
+  width: spacing.$x2lg;
+}
+.x3lg {
+  width: spacing.$x3lg;
+}
