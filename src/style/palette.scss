@@ -29,6 +29,12 @@ $dark-red: #ba3254 !default;
 $lipstick: #ff5ac4 !default;
 $brown: #7f5347 !default;
 $bubble: #faa1f1 !default;
+$energy-yellow: #f3e060 !default;
+$bright-gray: #393c49 !default;
+$mandy: #eb6165 !default;
+$eucalyptus: #258750 !default;
+$cerise-red: #d83a52 !default;
+$red-damask: #d8663a !default;
 
 // greyscale palette
 $dark: #272a31 !default;
@@ -40,26 +46,29 @@ $white: #ffffff !default;
 $color-modifier-percentage: 9% !default;
 
 // main ui colors
-$primary: #f3e060 !default;
+$primary: $energy-yellow !default;
 $primary-hover: darken($primary, $color-modifier-percentage);
 $primary-active: lighten($primary, $color-modifier-percentage);
 
-$secondary: #393c49 !default;
+$secondary: $bright-gray !default;
 $secondary-hover: darken($secondary, $color-modifier-percentage);
 $secondary-active: lighten($secondary, $color-modifier-percentage);
 
-$tertiary: #eb6165 !default;
+$tertiary: $mandy !default;
 $tertiary-hover: darken($tertiary, $color-modifier-percentage);
 $tertiary-active: lighten($tertiary, $color-modifier-percentage);
 
-$success: #258750 !default;
+$text: $dark !default;
+$text-subdue: $riverstone !default;
+
+$success: $eucalyptus !default;
 $success-hover: darken($success, $color-modifier-percentage);
 $success-active: lighten($success, $color-modifier-percentage);
 
-$danger: #d83a52 !default;
+$danger: $cerise-red !default;
 $danger-hover: darken($danger, $color-modifier-percentage);
 $danger-active: lighten($danger, $color-modifier-percentage);
 
-$warning: #d8663a !default;
+$warning: $red-damask !default;
 $warning-hover: darken($warning, $color-modifier-percentage);
 $warning-active: lighten($warning, $color-modifier-percentage);
