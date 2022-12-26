@@ -1,0 +1,147 @@
+// base colors
+$dark-indigo: #401694 !default;
+$blackish: #333333 !default;
+$navy: #225091 !default;
+$american-gray: #808080 !default;
+$aquamarine: #4eccc6 !default;
+$explosive: #c4c4c4 !default;
+$green: #00c875 !default;
+$winter: #9aadbd !default;
+$grass-green: #037f4c !default;
+$river: #68a1bd !default;
+$bright-green: #9cd326 !default;
+$dark-blue: #0086c0 !default;
+$saladish: #cab641 !default;
+$light-blue: #579bfc !default;
+$egg-yolk: #ffcc00 !default;
+$chill-blue: #66ccff !default;
+$orange: #fdab3d !default;
+$indigo: #5559df !default;
+$peach: #ffadad !default;
+$dark-purple: #784bd1 !default;
+$sunset: #ff7575 !default;
+$berry: #7e3b8a !default;
+$dark-orange: #ff642e !default;
+$purple: #a25ddc !default;
+$red: #e2445c !default;
+$sofia-pink: #ff158a !default;
+$dark-red: #ba3254 !default;
+$lipstick: #ff5ac4 !default;
+$brown: #7f5347 !default;
+$bubble: #faa1f1 !default;
+
+// main colors
+$energy-yellow: #f3e060 !default;
+$bright-gray: #393c49 !default;
+$mandy: #eb6165 !default;
+$eucalyptus: #258750 !default;
+$cerise-red: #d83a52 !default;
+$red-damask: #d8663a !default;
+
+// greyscale palette
+$dark: #272a31 !default;
+$wolf-grey: #d4d4d4 !default;
+$ui-grey: #e5e5e5 !default;
+$riverstone: #f5f5f5 !default;
+$white: #ffffff !default;
+
+// color modifier percentage
+$color-modifier-percentage: 9% !default;
+
+$base-colors: (
+        'dark-indigo': $dark-indigo,
+        'blackish': $blackish,
+        'navy': $navy,
+        'american-gray': $american-gray,
+        'aquamarine': $aquamarine,
+        'explosive': $explosive,
+        'green': $green,
+        'winter': $winter,
+        'grass-green': $grass-green,
+        'river': $river,
+        'bright-green': $bright-green,
+        'dark-blue': $dark-blue,
+        'saladish': $saladish,
+        'light-blue': $light-blue,
+        'egg-yolk': $egg-yolk,
+        'chill-blue': $chill-blue,
+        'orange': $orange,
+        'indigo': $indigo,
+        'peach': $peach,
+        'dark-purple': $dark-purple,
+        'sunset': $sunset,
+        'berry': $berry,
+        'dark-orange': $dark-orange,
+        'purple': $purple,
+        'red': $red,
+        'sofia-pink': $sofia-pink,
+        'dark-red': $dark-red,
+        'lipstick': $lipstick,
+        'brown': $brown,
+        'bubble': $bubble,
+        'energy-yellow': $energy-yellow,
+        'bright-gray': $bright-gray,
+        'mandy': $mandy,
+        'eucalyptus': $eucalyptus,
+        'cerise-red': $cerise-red,
+        'red-damask': $red-damask,
+        'dark': $dark,
+        'wolf-grey': $wolf-grey,
+        'ui-grey': $ui-grey,
+        'riverstone': $riverstone,
+        'white': $white,
+);
+
+$main-colors: (
+        'primary' : $energy-yellow,
+        'primary-hover' : darken($energy-yellow, $color-modifier-percentage),
+        'primary-active' : lighten($energy-yellow, $color-modifier-percentage),
+        'secondary' : $bright-gray,
+        'secondary-hover' : darken($bright-gray, $color-modifier-percentage),
+        'secondary-active' : lighten($bright-gray, $color-modifier-percentage),
+        'tertiary' : $mandy,
+        'tertiary-hover' : darken($mandy, $color-modifier-percentage),
+        'tertiary-active' : lighten($mandy, $color-modifier-percentage),
+        'text' : $dark,
+        'text-subdue' : $riverstone,
+        'success' : $eucalyptus,
+        'success-hover' : darken($eucalyptus, $color-modifier-percentage),
+        'success-active' : lighten($eucalyptus, $color-modifier-percentage),
+        'danger' : $cerise-red,
+        'danger-hover' : darken($cerise-red, $color-modifier-percentage),
+        'danger-active' : lighten($cerise-red, $color-modifier-percentage),
+        'warning' : $red-damask,
+        'warning-hover' : darken($red-damask, $color-modifier-percentage),
+        'warning-active' : lighten($red-damask, $color-modifier-percentage),
+);
+
+@each $name, $color in $base-colors {
+  //background color classes
+  .bg-#{$name} {
+    background-color: $color;
+  }
+  //text color classes
+  .text-#{$name} {
+    color: $color;
+  }
+  //border color classes
+  .border-#{$name} {
+    border: $color;
+  }
+}
+
+@each $name, $color in $main-colors {
+  //background color classes
+  .bg-#{$name} {
+    background-color: $color;
+  }
+  //text color classes
+  .text-#{$name} {
+    color: $color;
+  }
+  //border color classes
+  .border-#{$name} {
+    border: $color;
+  }
+}
+

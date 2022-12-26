@@ -1,0 +1,42 @@
+@use '../../../../style/font.module.scss';
+@use '../../../../style/palette.module.scss';
+
+.h1 {
+  @extend .font-medium, .text-x4lg;
+  line-height: 45px;
+  letter-spacing: -1px;
+}
+
+//style for h2;
+.h2 {
+  @extend .font-bold, .text-x2lg;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+}
+
+//style for h3;
+.h3 {
+  @extend .font-light, .text-x2lg;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+}
+
+//style for h4;
+.h4 {
+  @extend .font-bold, .text-lg;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+}
+
+//style for h5;
+.h5 {
+  @extend .font-bold, .text-base;
+  line-height: 24px;
+}
+
+//style for h6;
+.h6 {
+  @extend .font-normal, .text-sm;
+  line-height: 22px;
+}
+

@@ -1,8 +1,26 @@
+import { Title, Subtitle, Description, Stories } from '@storybook/addon-docs'
 import styles from './spacing.stories.module.scss'
 
-const spacings = ['x3sm', 'x2sm', 'xsm', 'sm', 'base', 'lg', 'xlg', 'x2lg', 'x3lg']
+const spacings = ['w-x3sm', 'w-x2sm', 'w-xsm', 'w-sm', 'w-base', 'w-lg', 'w-xlg', 'w-x2lg', 'w-x3lg']
 
-export default () => {
+export default {
+  title: 'Foundation/Spacing',
+  component: () => {},
+  parameters: {
+    docs: {
+      page: () => (
+        <>
+          <Title />
+          <Subtitle />
+          <Description />
+          <Stories includePrimary />
+        </>
+      )
+    }
+  }
+}
+
+export const Spacing = () => {
   return (
     <div className={styles.rootContainer}>
       {spacings.map(spacing => (

@@ -1,0 +1,7 @@
+@use '../../../../style/font.module.scss';
+
+//style for p;
+.p {
+  @extend .font-normal, .text-base;
+  line-height: 24px;
+}
