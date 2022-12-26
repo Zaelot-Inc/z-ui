@@ -1,7 +1,8 @@
-@use '../../../style/palette.scss';
-@use '../../../style/spacing.scss';
+@use '../../../style/palette.module.scss';
+@use '../../../style/spacing.module.scss';
 
 .button {
+  @extend .bg-primary, .py-sm, .px-lg;
   font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   border: 0;
@@ -10,16 +11,14 @@
   display: inline-block;
   line-height: 1;
   color: white;
-  background-color: palette.$primary;
   font-size: 14px;
-  padding: spacing.$sm spacing.$lg;
 
   &:hover {
-    background-color: palette.$primary-hover;
+    @extend .bg-primary-hover;
   }
 
   &:active {
-    background-color: palette.$primary-active;
+    @extend .bg-primary-active;
   }
 }
 

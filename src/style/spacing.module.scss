@@ -1,0 +1,84 @@
+$spacing: (
+        x3sm: 0.125rem,
+        x2sm: 0.25rem,
+        xsm: 0.5rem,
+        sm: 0.75rem,
+        base: 1rem,
+        lg: 1.25rem,
+        xlg: 1.5rem,
+        x2lg: 1.75rem,
+        x3lg: 2rem
+);
+
+@each $name, $space in $spacing {
+  //padding classes
+  .p-#{$name} {
+    padding: $space;
+  }
+  .pt-#{$name} {
+    padding-top: $space;
+  }
+  .pr-#{$name} {
+    padding-right: $space;
+  }
+  .pb-#{$name} {
+    padding-bottom: $space;
+  }
+  .pl-#{$name} {
+    padding-left: $space;
+  }
+  .px-#{$name} {
+    padding-left: $space;
+    padding-right: $space;
+  }
+  .py-#{$name} {
+    padding-top: $space;
+    padding-bottom: $space;
+  }
+
+  //margin classes
+  .m-#{$name} {
+    margin: $space;
+  }
+  .mt-#{$name} {
+    margin-top: $space;
+  }
+  .mr-#{$name} {
+    margin-right: $space;
+  }
+  .mb-#{$name} {
+    margin-bottom: $space;
+  }
+  .ml-#{$name} {
+    margin-left: $space;
+  }
+  .mx-#{$name} {
+    margin-left: $space;
+    margin-right: $space;
+  }
+  .my-#{$name} {
+    margin-top: $space;
+    margin-bottom: $space;
+  }
+
+  //gap classes
+  .gap-#{$name} {
+    gap: $space;
+  }
+  .gap-x-#{$name} {
+    column-gap: $space;
+  }
+  .gap-y-#{$name} {
+    row-gap: $space;
+  }
+
+  //width classes
+  .w-#{$name} {
+    width: $space;
+  }
+
+  //height classes
+  .h-#{$name} {
+    height: $space;
+  }
+}
